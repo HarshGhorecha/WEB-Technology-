@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h2>Student Registration Form</h2>
+    <form action="#" method="post">
+        <!-- Full Name -->
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" required><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Mobile Number -->
+        <label for="mobile">Mobile Number:</label><br>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        <!-- Address -->
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+        <!-- Nationality -->
+        <label for="nationality">Nationality:</label><br>
+        <input type="text" id="nationality" name="nationality" required><br><br>
+
+        <!-- Date of Birth -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label><br><br>
+
+        <!-- Highest Degree -->
+        <label for="degree">Highest Degree:</label><br>
+        <select id="degree" name="degree" required>
+            <option value="" disabled selected>Select your degree</option>
+            <option value="BCA">BCA</option>
+            <option value="BSc">BSc</option>
+            <option value="BTech">BTech</option>
+            <option value="MCA">MCA</option>
+            <option value="MSc">MSc</option>
+            <option value="MTech">MTech</option>
+        </select><br><br>
+
+        <!-- CPI -->
+        <label for="cpi">CPI:</label><br>
+        <input type="text" id="cpi" name="cpi" required><br><br>
+
+        <!-- University -->
+        <label for="university">University:</label><br>
+        <input type="text" id="university" name="university" required><br><br>
+
+        <!-- Passing Year -->
+        <label for="passingYear">Passing Year:</label><br>
+        <select id="passingYear" name="passingYear" required>
+            <option value="" disabled selected>Select passing year</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+        </select><br><br>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
