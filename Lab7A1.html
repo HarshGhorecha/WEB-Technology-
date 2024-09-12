@@ -14,3 +14,39 @@
     <button onclick="calculator()">Open Calculator</button>
 </body>
 </html>
+=====================JS====================
+// Function to perform the calculator operations
+function calculator() {
+  // Prompt user for the first number
+  let num1 = parseFloat(prompt("Enter the first number:"));
+  
+  // Prompt user for the second number
+  let num2 = parseFloat(prompt("Enter the second number:"));
+  
+  // Prompt user for the operation (+, -, *, /)
+  let operator = prompt("Enter an operator (+, -, *, /):");
+  
+  // Initialize result variable
+  let result;
+  
+  // Perform the calculation based on the operator
+  if (operator === "+") {
+    result = num1 + num2;
+  } else if (operator === "-") {
+    result = num1 - num2;
+  } else if (operator === "*") {
+    result = num1 * num2;
+  } else if (operator === "/") {
+    result = num1 / num2;
+  } else {
+    alert("Invalid operator! Please refresh and try again.");
+    return; // Exit the function if the operator is invalid
+  }
+
+  // Display the result in an alert box
+  alert(`Result: ${num1} ${operator} ${num2} = ${result}`);
+}
+
+// Call the calculator function to run the program
+calculator();
+
